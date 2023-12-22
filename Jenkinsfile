@@ -7,12 +7,10 @@ pipeline {
     }
     stages {
         stage('Terraform Apply') {
-          input {
-            message "should we continue?"
-          }
             steps {
                 sh 'make'
 
                 }
               }
+        }
         }
