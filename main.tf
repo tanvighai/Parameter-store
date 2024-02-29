@@ -12,7 +12,7 @@ variable "parameters" {
     {name = "prod.rds.endpoint" , value ="prod-mysql.cluster-c1m20yogsjyg.us-east-1.rds.amazonaws.com" , type = "String"} ,
     {name = "dev.expense.frontend.backend_url" , value ="http://backend-dev.tanvi12online.net/" , type = "String"} ,
 
-
+#we do not keep the passwords in the git repos and generally use ssm for secret management
 ##common env
 
     {name = "jenkins_password" , value ="Admin123" , type = "SecureString"} ,
